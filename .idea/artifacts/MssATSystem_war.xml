@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="MssATSystem:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>MssATSystem</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="MssATSystem.war">
+      <element id="artifact" artifact-name="MssATSystem:war exploded" />
+    </root>
+  </artifact>
+</component>
