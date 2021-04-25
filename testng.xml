@@ -1,17 +1,22 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite1" verbose="1" >
-    <test name="Nopackage" >
+<suite name="Mss Portal Automation Test">
+
+    <listeners>
+        <listener class-name="com.mssTest.utilities.Reporting" />
+    </listeners>
+
+
+    <test name="Mss Portal">
+        <parameter name="browser" value="firefox" />
         <classes>
+            <class name="com.mssTest.testCases.TC_LoginTest_001" />
+<!--            <class name="com.mssTest.testCases.TC_RequestStatement_001" />-->
         </classes>
+
     </test>
 
-    <test name="Regression1">
-        <parameter name="browser" value="chrome" />
-        <classes>
-            <class name="com.mssTest.testCases.TC_LoginTest_001"/>
-        </classes>
-    </test>
 </suite>
 
 
